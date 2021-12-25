@@ -14,19 +14,19 @@ const sidebarLinks = [
         id: 1,
         name: 'الرئيسية',
         icon: 'dashboard',
-        href: '/dashboard'
+        href: '/'
     },
     {
         id: 3,
         name: 'إدارة المستخدمين',
         icon: 'people',
-        href: '/dashboard/users'
+        href: '/users'
     },
     {
         id: 4,
         name: 'الخدمات',
         icon: 'collections_bookmark',
-        href: '/dashboard/posts',
+        href: '/posts',
     },
     {
         id: 6,
@@ -37,37 +37,37 @@ const sidebarLinks = [
             {
                 id: 1,
                 name: 'الشارات',
-                href: '/dashboard/cms/Badges'
+                href: '/cms/Badges'
             },
             {
                 id: 2,
                 name: 'المستويات',
-                href: '/dashboard/cms/Levels'
+                href: '/cms/Levels'
             },
             {
                 id: 3,
                 name: 'إدارة التصنيفات',
-                href: '/dashboard/cms/categories'
+                href: '/cms/categories'
             },
             {
                 id: 4,
                 name: 'الوسوم',
-                href: '/dashboard/cms/tags'
+                href: '/cms/tags'
             },
             {
                 id: 5,
                 name: 'البلدان',
-                href: '/dashboard/cms/countries'
+                href: '/cms/countries'
             },
             {
                 id: 6,
                 name: 'المهارات',
-                href: '/dashboard/cms/skills'
+                href: '/cms/skills'
             },
             {
                 id: 7,
                 name: 'اللغات',
-                href: '/dashboard/cms/languages'
+                href: '/cms/languages'
             },
         ]
     },
@@ -75,7 +75,7 @@ const sidebarLinks = [
         id: 9,
         name: 'رسائل اتصل بنا',
         icon: 'email',
-        href: '/dashboard/contacts'
+        href: '/contacts'
     },
 ]
 function index(props: any): ReactElement {

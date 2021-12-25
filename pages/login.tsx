@@ -9,7 +9,7 @@ import * as Yup from 'yup';
 import { useRouter } from "next/router";
 import { Alert } from "@/components/Alert/Alert";
 import Cookies from 'js-cookie'
-import { MetaTags } from '@/components/SEO/MetaTags'
+import { MetaTags } from '../components/SEO/MetaTags'
 
 const Login = (props: any): ReactElement => {
     // The router object used for redirecting after login.
