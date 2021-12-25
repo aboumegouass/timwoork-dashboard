@@ -2,7 +2,7 @@ import { ReactElement, useState } from "react";
 import DashboardLayout from "@/components/Layout/DashboardLayout";
 import { Alert } from "@/components/Alert/Alert";
 import AddNewLevel from "./Modals/AddNewLevel";
-import API from '../../../config';
+import API from '../../config';
 import { motion } from "framer-motion";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'

@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout/HomeLayout'
+import Layout from '@/components/Layout/DashboardLayout'
 import Notification from '@/components/Notification'
 import { ReactElement } from "react";
 
