@@ -1,0 +1,1224 @@
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+@import 'variables';
+@import 'alerts';
+@import 'forms';
+@import 'buttons';
+@import 'navbar';
+@import 'post';
+@import 'table';
+@import 'footer';
+
+
+// Create Circular Center
+.circular-center {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    &.small-size {
+        width: 40px;
+        height: 40px;
+    }
+    &.semi-small-size {
+        width: 35px;
+        height: 35px;
+    }
+    &.tiny-size {
+        width: 30px;
+        height: 30px;
+    }
+}
+.circular-img {
+    border-radius: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    &.huge-size {
+        width: 90px;
+        height: 90px;
+    }
+    &.xl-size {
+        width: 75px;
+        height: 75px;
+    }
+    &.lg-size {
+        width: 65px;
+        height: 65px;
+    }
+    &.md-size {
+        width: 50px;
+        height: 50px;
+    }
+    &.small-size {
+        width: 40px;
+        height: 40px;
+    }
+    &.semi-small-size {
+        width: 35px;
+        height: 35px;
+    }
+    &.tiny-size {
+        width: 30px;
+        height: 30px;
+    }
+}
+a {
+    text-decoration: none;
+}
+.material-icons {
+    line-height: 0;
+}
+body {
+    direction: ltr;
+    font-family: 'Montserrat';
+    background-color: #f5f5f5;
+}
+.is-home {
+    padding-top: 60px;
+}
+.row {
+    margin: 0;
+}
+.flex-center {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+/*
+-------------------------------------------------------------------------------------------
+    Hero Header
+-------------------------------------------------------------------------------------------
+*/
+
+.timlands-hero {
+    background-image: url('5313770.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .timlands-hero-inner {
+        padding: 20px 0;
+        text-align: center;
+        .timlands-hero-image {
+            padding: 7px 0;
+        }
+        .timlands-hero-content {
+            .main-title {
+                font-weight: 800;
+                color: #333;
+            }
+            .sub-title {
+                font-size: 25px;
+                color: #444;
+                font-weight: 300;
+            }
+        }
+        .timlands-hero-search {
+            display: flex;
+            justify-content: center;
+            .rel-search {
+                width: 600px;
+                position: relative;
+                margin-top: 7px;
+                input {
+                    width: 100%;
+                }
+                .search-btn {
+                    background-color: transparent;
+                    border: 0;
+                    color: #ccc;
+                    top: 14px;
+                    right: 10px;
+                    position: absolute;
+                }
+                .res-search-container {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    background-color: #fff;
+                    overflow: hidden;
+                    border: 1px solid #ddd;
+                    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.062);
+                    border-radius: 0 0 6px 6px;
+                    top: 40px;
+                    text-align: left;
+
+                }
+            }
+            .popular-searchs-list {
+                padding: 7px 0;
+                margin-top: 8px;
+                .popular-title {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #444;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                }
+                .popular-item {
+                    a {
+                        display: block;
+                        font-size: 12px;
+                        margin: 0 4px;
+                        color: #333;
+                        padding: 5px 9px;
+                        background-color: #f1f1f1;
+                        border-radius: 5px;
+                        transition: all 0.3s;
+                        &:hover {
+                            background-color: #ddd;
+                            color: #000;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+---------------------------------------------------------------------------------------------
+    Home Nannies Section
+---------------------------------------------------------------------------------------------
+*/
+.timwoork-nanny-home {
+    background-color: #fff;
+    padding: 120px 30px;
+    .d-flex {
+        align-items: center;
+        align-content: center;
+    }
+    .nanny-home-image {
+        width: 40%;
+        img {
+            width: 550px;
+            margin-left: -30px;
+        }
+    }
+    .nanny-home-content {
+        padding-left: 15px;
+        width: 60%;
+        .title {
+            font-size: 60px;
+        }
+        .text {
+            font-size: 27px;
+            color: #444;
+        }
+    }
+}
+
+/*
+---------------------------------------------------------------------------------------------
+    Account Page
+---------------------------------------------------------------------------------------------
+*/
+.timlands-accounts {
+    .timlands-accounts-container {
+        background-color: #fff;
+        height: 100vh;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        .timlands-accounts-forms {
+            width: 100%;
+        }
+    }
+    .timlands-accounts-header {
+        padding: 20px 0;
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 9px;
+        .title {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+        }
+    }
+}
+/*
+---------------------------------------------------------------------------------------------
+    Dashboard Page
+---------------------------------------------------------------------------------------------
+*/
+.dashboard-sidebar {
+    background-color: #fff;
+    height: 100%;
+    .dashboard-sidebar-inner {
+        .dashbord-logo {
+            padding: 12px;
+            text-align: center;
+        }
+        .dashboard-sidebar-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            > .dash-item {
+                padding: 3px;
+                > .dash-link {
+                    padding: 10px 19px;
+                    color: #333;
+                    font-size: 15px;
+                    font-weight: bold;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    .material-icons {
+                        margin-right: 5px;
+                        font-size: 19px;
+                    }
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .sub-dashnav-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 5px 0;
+                    padding-left: 50px;
+                    transition: all 0.3s;
+                    > .subdash-item {
+                        > .subdash-link {
+                            display: flex;
+                            font-size: 13px;
+                            color: #777;
+                            padding: 6px 4px;
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                        &.active {
+                            > .subdash-link {
+                                font-weight: bold;
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+                &.active {
+                    > .dash-link {
+                        color: $primary;
+                        background-color: #f6f6f6;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.timlands-dashboard-content {
+    padding: 19px;
+}
+/*
+---------------------------------------------------------------------------------------------
+    Dashboard Navbar
+---------------------------------------------------------------------------------------------
+*/
+.dashboard-navbar {
+    background-color: #fff;
+    padding: 6px 17px;
+    .auth-dashboard {
+        &.left-dash-nav {
+            margin-left: auto;
+        }
+        &.right-dash-nav {
+            margin-right: auto;
+        }
+    }
+    .circular-item {
+        button {
+            background-color: transparent;
+            color: #555;
+            border: 0; 
+            &:hover {
+                background-color: rgb(231, 231, 231);
+                color: #000;
+            }
+        }
+    }
+}
+/*
+---------------------------------------------------------------------------------------------
+    Panels Style
+---------------------------------------------------------------------------------------------
+*/
+.timlands-panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+    @media (max-width: 500px) {
+        padding: 20px 0;
+    }
+    .timlands-panel-header {
+        padding: 7px 0;
+        border-bottom: 1px solid #f4f4f4;
+        margin-bottom: 17px;
+        .header-butt {
+            margin-left: auto;
+        }
+        .title {
+            font-weight: bold;
+            color: #444;
+            font-size: 19px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            .material-icons {
+                margin-right: 6px;
+                font-size: 21px;
+            }
+        }
+    }
+}
+.timlands-panel-item {
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    transition: all 0.3s;
+
+    &:hover {
+        transition: all 0.3s;
+        border: 1px solid $primary;
+        box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.055);
+    }
+    .panel-item-header, .panel-item-body, .panel-item-footer {
+        padding: 15px;
+    }
+    .panel-item-header {
+        border-bottom: 1px solid #f3f3f3;
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+    }
+    .panel-item-body {
+        .panel-image {
+            display: block;
+            margin: auto;
+            margin-bottom: 7px;
+        }
+        .count-num {
+            font-size: 25px;
+            font-weight: 300;
+            margin: 0;
+            color: #333;
+        }
+        .details-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 12px;
+            > li {
+                font-size: 13px;
+                padding: 8px 0;
+                border-bottom: 1px solid #f6f6f6;
+                &:last-child {
+                    border-bottom: 0;
+                }
+                p {
+                    margin: 0;  
+                }
+                .det-val {
+                    margin-left: auto;
+                    .text {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    .panel-item-footer {
+        border-top: 1px solid #f3f3f3;
+    }
+}
+/*
+    Modal
+*/
+.center {
+    text-align: center;
+}
+.panel-modal {
+    position: fixed;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.11);
+    width: 700px;
+    z-index: 999;
+    overflow: hidden;
+    &.md {
+        width: 790px;
+    }
+    &.lg {
+        width: 880px;
+    }
+    .panel-modal-header {
+        padding: 17px 12px;
+        border-bottom: 1px solid #f6f6f6;
+        margin-bottom: 7px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        .title {
+            font-weight: bold;
+            color: #444;
+            margin: 0;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            .material-icons {
+                margin-right: 6px;
+                font-size: 20px;
+            }
+        }
+        .panel-modal-left-tools {
+            margin-left: auto;
+            .close-modal {
+                background-color: #fff;
+                display: flex;
+                width: 40px;
+                height: 40px;
+                color: #777;
+                border-radius: 50%;
+                border: 0;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                .material-icons {
+                    font-size: 20px;
+                }
+                &:hover {
+                    color: #333;
+                    background-color: #f8f8f8;
+                    transition: all 0.3s;
+                }
+                &:focus {
+                    color: #000;
+                    background-color: #f1f1f1;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+    .panel-modal-body {
+        padding: 17px 12px;
+        position: relative;
+        .is-loading {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0.699);
+                z-index: 20;
+        }
+    }
+    .panel-modal-footer {
+        display: flex;
+        padding: 17px 12px;
+        border-top: 1px solid #ddd;
+        background-color: #f7f7f7;
+    }
+}
+.panel-modal-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+/*
+---------------------------------------------------------------------------------------------
+    404 Page
+---------------------------------------------------------------------------------------------
+*/
+.timlands-step {
+    background-color: #fff;
+    padding: 10px;
+    margin: 19px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    position: relative;
+    .timlands-step-nav {
+        position: relative;
+        .list-step {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            align-content: center;
+            justify-content: space-around;
+            @keyframes stepProgress {
+                0% {
+                    right: 100%;
+                }
+                100% {
+                    right: 83%;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                background-color: #f2f2f2;
+                left: 0;
+                right: 0;
+                z-index: 11;
+                transition: all 0.3s;
+            }
+
+            > .step-item {
+                z-index: 39;
+                .step-count {
+                    display: flex;
+                    width: 35px;
+                    height: 35px;
+                    background-color: #ddd;
+                    border-radius: 50%;
+                    align-content: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &.active {
+                    .step-count {
+                        background-color: $primary;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .progress-bar {
+        position: absolute;
+        background-color: $primary;
+        height: 4px;
+        left: 0;
+        right: 84%;
+        top: 49%;
+        z-index: 12;
+    }
+}
+/*
+---------------------------------------------------------------------------------------------
+    404 Page
+---------------------------------------------------------------------------------------------
+*/
+.timwoork-404-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    .not-found-image {
+        img {
+            width: 400px;
+        }
+    }
+    .title {
+        margin: 25px 0;
+        color: #555;
+        font-weight: 400;
+        .error-status {
+            font-weight: bold;
+        }
+    }
+}
+/*
+---------------------------------------------------------------------------------------------
+    Posts Aside
+---------------------------------------------------------------------------------------------
+*/
+.timwoork-single {
+    .timwoork-single-post {
+        padding: 20px;
+        .timwoork-single-header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 9px;
+            padding: 20px 0;
+            .title {
+                font-size: 32px;
+                font-weight: bold;
+                color: #333;
+                margin: 0;
+            }
+            .single-header-meta {
+                padding: 0;
+                margin-top: 12px;
+                li {
+                    padding: 0 9px;
+                    border-right: 1px solid #ddd;
+                    display: flex;
+                    font-size: 14px;
+                    align-items: center;
+                    align-content: center;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                    &.rate-stars {
+                        .stars-icons {
+                            .material-icons-outlined {
+                                color: rgb(233, 98, 8);
+                                font-size: 19px;
+                                margin-top: 5px;
+                                &.outline-star {
+                                    color: #777;
+                                }
+                            }
+                        }
+                    }
+                    &.level-item {
+                        .text-level {
+                            font-weight: 700;
+                            color: #555;
+                            margin-right: 4px;
+                        }
+                        .value-level {
+                            font-weight: 300;
+                            color: #333;
+                        }
+                    }
+                    &.user-item {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            font-weight: bold;
+                            color: #333;
+                            font-size: 13px;
+                            .circular-center {
+                                display: inline-block;
+                                margin-right: 5px;
+                            }
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                    }
+                    &.category-item {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            font-weight: bold;
+                            color: #333;
+                            font-size: 13px;
+                            .material-icons {
+                                margin-right: 6px;
+                            }
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .timwoork-single-content {
+            .timwoork-single-content-body {
+                background-color: #fff;
+                padding: 18px;
+                border-radius: 5px;
+                .each-slide {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 6px;
+                    .images-slider {
+                        position: relative;
+                        background-size: cover;
+                        background-position: center;
+                        overflow: hidden;
+                        height: 450px;
+                        .caption-descriptions {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            padding: 22px;
+                            height: 120px;
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
+                            .text {
+                                margin: 0;
+                                font-size: 18px;
+                                color: #fff;
+                                text-shadow: 1px 2px rgba(0, 0, 0, 0.555);
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .arrow-navigations {
+                    cursor: pointer;
+                    .material-icons-outlined {
+                        color: #fff;
+                        font-size: 73px;
+                        text-shadow: 1px 2px rgba(0, 0, 0, 0.555);
+                        margin-left: -22px;
+                    }
+                }
+                .timwoork-single-product-detailts {
+                    padding: 20px 0;
+                    .text {
+                        font-size: 18px;
+                        color: #333;
+                        margin: 14px 0;
+                        text-align: justify;
+                        font-weight: 400;
+                        line-height: 29px;
+                    }
+                    h1, h2, h3 {
+                        padding: 9px 0;
+                        font-weight: 600;
+                        color: #222;
+                    }
+                    .single-list {
+                        line-height: 29px;
+                        font-size: 19px;
+                        > li {
+                            margin: 6px 0;
+                            > ul {
+                                margin: 15px 0;
+                                > li {
+                                    margin: 6px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .timwoork-single-seller-info {
+                .seller-info-header {
+                    padding: 9px 0;
+                    .title {
+                        font-weight: 700;
+                    }
+                }
+                .seller-info-container {
+                    padding: 14px 0;
+                    .seller-info-avatar {
+                        padding-right: 12px;
+                        position: relative;
+                        span.is-online {
+                            position: absolute;
+                            display: flex;
+                            height: 16px;
+                            width: 16px;
+                            top: 5px;
+                            left: 4px;
+                            background-color: rgb(64, 175, 97);
+                            border-radius: 50%;
+                        }
+                    }
+                    .seller-info-content {
+                        .user-title {
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin: 0;
+                            color: #333;
+                        }
+                        .user-meta {
+                            padding: 0;
+                            margin-top: 8px;
+                            li {
+                                display: flex;
+                                align-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                                padding: 1px 6px;
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                                color: #555;
+                                .material-icons {
+                                    font-size: 16px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        .seller-info-butts {
+                            padding: 10px 0;
+                            .btn {
+                                margin-right: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+            .timwoork-single-comments {
+                .timwoork-single-comments-inner {
+                    .single-comments-header {
+                        padding: 14px 0;
+                        border-bottom: 1px solid #f4f4f4;
+                        margin-bottom: 8px;
+                        .title {
+                            font-weight: bold;
+                            font-size: 22px;
+                            margin: 0;
+                            color: #444;
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            .material-icons {
+                                margin-right: 7px;
+                            }
+                        }
+                    }
+                    .single-comments-body {
+                        .comments-list-items {
+                            .list-items-ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+                                > .comment-item {
+                                    padding: 12px;
+                                    padding-left: 25px;
+                                    .comment-item-avatar {
+                                        padding-top: 8px;
+                                    }
+                                    .comment-item-content {
+                                        padding: 13px;
+                                        .meta-time, .user-ratting {
+                                            font-size: 12px;
+                                            color: #444;
+                                            margin: 0;
+                                            display: flex;
+                                            align-content: center;
+                                            align-items: center;
+                                            span {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        .meta-time {
+                                            .material-icons {
+                                                margin-right: 4px;
+                                                margin-top: -1px;
+                                            }
+                                        }
+                                        .user-title {
+                                            font-size: 17px;
+                                            font-weight: bold;
+                                            color: #444;
+                                            margin-top: 6px;
+                                        }
+                                        .item-text {
+                                            line-height: 28px;
+                                            color: #333;
+                                            margin: 0;
+                                            margin-top: 7px;
+                                        }
+                                    }
+                                    .list-items-replies {
+                                        list-style: none;
+                                        .reply-item {
+                                            margin: 5px 0;
+                                            background-color: #f7f7f7;
+                                            border-radius: 6px;
+                                            padding: 20px 13px;
+                                            padding-left: 40px;
+                                            border-left: 4px solid $primary;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.single-sidebar {
+    position: sticky;
+    top: 90px;
+    padding: 20px 0;
+    .single-panel-aside {
+        background-color: #fff;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.062);
+        .panel-aside-header {
+            padding: 15px 22px;
+            border-bottom: 1px solid #f2f2f2;
+            .top-aside-nav {
+                li {
+                    padding: 0;
+                    font-size: 13px;
+                    align-items: center;
+                    align-content: center;
+                    display: flex;
+                    color: #555;
+                    padding: 2px 8px;
+                    border-right: 2px solid #f7f7f7;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                    .material-icons {
+                        font-size: 17px;
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: #333;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-aside-body {
+            padding: 14px;
+            .bayers-count {
+                padding: 7px 20px;
+                background-color: rgb(240, 240, 240);
+                display: inline-block;
+                border-radius: 4px;
+                .num {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #444;
+                }
+            }
+            .add-devloppers-header {
+                padding: 15px 0;
+                border-bottom: 1px solid #f4f4f4;
+                .title {
+                    margin: 0;
+                    color: #333;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+            .add-devloppers-nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .devloppers-item {
+                    font-weight: 500;
+                    color: #444;
+                    font-size: 13px;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid #f5f5f5;
+                    padding: 10px 0;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    .form-check {
+                        .form-check-label {
+                            margin-top: 2px;
+                        }
+                        .form-check-input {
+                            width: 1.14em;
+                            height: 1.14em;
+                            &:focus {
+                                border-color: lighten($primary, 8);
+                                outline: 0;
+                            }
+                            &:checked {
+                                background-color: $primary;
+                                border-color: $primary;
+                            }
+                        }
+                    }
+                    .devloppers-price {
+                        margin-left: auto;
+                        .price-number {
+                            font-weight: bold;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-aside-footer {
+            background-color: #f7f7f7;
+            border-top: 1px solid #f1f1f1;
+            padding: 13px;
+            text-align: center;
+            .aside-footer-total-price {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                .price-total {
+                    margin: 0;
+                    font-weight: 400;
+                    color: #666;
+                    font-size: 20px;
+                }
+                .bayers-count {
+                    padding: 0 15px;
+                    height: 27px;
+                    background-color: rgb(240, 240, 240);
+                    display: flex;
+                    border-radius: 4px;
+                    margin-left: 7px;
+                    align-items: center;
+                    align-content: center;
+                    .num {
+                        margin: 0;
+                        font-weight: 400;
+                        font-size: 13px;
+                        color: #777;
+                    }
+                }
+            }
+            .aside-footer-note {
+                margin: 8px 0;
+                .text {
+                    font-size: 13px;
+                    margin: 0;
+                    color: #555;
+                }
+            }
+            .aside-footer-addtocart {
+                .butt-primary {
+                    justify-content: center;
+                    width: 100%;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+/*
+---------------------------------------------------------------------------------------------
+    Posts Aside
+---------------------------------------------------------------------------------------------
+*/
+.posts-aside {
+    padding: 40px 50px;
+
+    .posts-aside-header {
+        padding: 20px 0;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #f1f1f1;
+        .title {
+            font-size: 19px;
+            font-weight: bold;
+        }
+    }
+}
+/*
+---------------------------------------------------------------------------------------------
+    Dark Mode
+---------------------------------------------------------------------------------------------
+*/
+.is-dark {
+    .timlands-navbar {
+        background-color: #111;
+        .nav-container {
+            .logo-nav {
+                svg {
+                    stop {
+
+                        fill: #fff;
+                    }
+                }
+            }
+            .app-navbar {
+                > li {
+                    > a {
+                        color: #ccc;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-auth {
+            > li {
+                &.login-nav-item {
+                    > a {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+        .circular-item {
+            button {
+                background-color: #151515;
+                color: #ddd;
+                &:hover {
+                    background-color: #222;
+                    color: #fff;
+                }
+            }
+            .list-lang-items {
+                background-color: #111;
+                box-shadow: 3px 2px 7px rgba(255, 255, 255, 0.055);
+                .items-list {
+                    .lang-item {
+                        .lang-link {
+                            color: #f1f1f1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .timlands-sub-navbar {
+        background-color: #000;
+        .sub-navbar-cats {
+            .category-title {
+                color: #ddd;
+            }
+            .category-item {
+                .category-link {
+                    color: #ccc;
+                    &::after {
+                        background-color: $primary2;
+                    }
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                &.active {
+                    .category-link {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
