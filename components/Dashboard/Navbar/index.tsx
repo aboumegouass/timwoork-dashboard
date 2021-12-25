@@ -1,19 +1,10 @@
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement } from 'react'
 import PropTypes from "prop-types";
 import { motion } from 'framer-motion';
-import AddCredit from '../Modals/AddCredit';
-
 function index({ isDarken, setIsDarkenHandle, setIsSidebarShowenHandle }: any): ReactElement {
-    const [isModalShowen, setIsModalShowen] = useState(false)
-    const setIsModalShowenHandle = () => {
-        setIsModalShowen(true);
-    }
-    const setIsModalHiddenHandle = () => {
-        setIsModalShowen(false);
-    }
+
     return (
         <>
-            {isModalShowen && <AddCredit setIsModalHiddenHandle={setIsModalHiddenHandle} />}
             <div className="dashboard-navbar">
                 <div className="d-flex">
                     <ul className="nav auth-dashboard right-dash-nav">
@@ -23,12 +14,6 @@ function index({ isDarken, setIsDarkenHandle, setIsSidebarShowenHandle }: any): 
                                     <motion.i className="material-icons material-icons-outlined">menu</motion.i>
                                 </motion.button>
                             </div>
-                        </li>
-                        <li className="dash-nav-item" dir="ltr">
-
-                            <button dir="rtl" onClick={setIsModalShowenHandle} className="btn butt-sm butt-blue flex-center">
-                                <span className="material-icons material-icons-outlined">add_circle_outline</span> شحن رصيدك
-                            </button>
                         </li>
                     </ul>
                     <ul className="nav auth-dashboard left-dash-nav">
